@@ -4,12 +4,12 @@ import org.junit.Test;
 
 public class HelloWorldExampleTest extends TestCase{
 
-    String message = "HelloWorldExample@20ad9418";
+    String message = "HelloWorld";
     HelloWorldExample helloWorld = new HelloWorldExample();
 
     @Test
     public void testConsoleMessage(){
-        assertEquals(message,helloWorld.toString());
+        assertEquals(message,helloWorld.printme("HelloWorld"));
     }
 
 }
